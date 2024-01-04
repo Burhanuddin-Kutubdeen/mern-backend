@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page" class="site">
+    <div class="container">
+      <div class="form-box">
+        <div class="progress">
+        <div class="logo"><a href="/"><span>Dos</span>flamingo</a></div>
+        <ul class="progress-steps">
+          <li class="step active">
+            <span>1</span>
+            <p>Personal<br><span>1 Minute to complete </span></p>
+          </li>
+          <li class="step">
+            <span>2</span>
+            <p>Additional<br><span>60 secs to complete </span></p>
+          </li>
+          <li class="step">
+            <span>3</span>
+            <p>Security<br><span>30 secs to complete </span></p>
+          </li>
+        </ul>
+      </div>
+        <form action="/" method="POST">
+          <div class="form-one form-step active">
+            <div class="bg svg"></div>
+            <h2>Personal Information</h2>
+            <p>Enter your personal information correctly</p>
+            <div>
+              <label>Biodata created by</label>
+              <select name="creator" id="creator">
+              <option value="">Please select</option>
+              <option value="Self">Self</option>
+              <option value="Parents">Parents/Family</option>
+              <option value="Relatives/Friends">Relatives/Friends</option>
+              </select>
+            </div>
+            <div>
+              <label>First Name</label>
+              <input type="text" placeholder="e.g. John" name="firstName">
+            </div>
+            <div>
+              <label>Last Name</label>
+              <input type="text" placeholder="e.g. Paul" name="lastName">
+            </div>
+            <div>
+              <label>Phone</label>
+              <input type="tel" placeholder="+94xxxxxxxxx" name="number">
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" placeholder="your email address" name="email">
+            </div>
+            <div class="gender">
+              <label>Gender</label>
+              <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <div class="birth">
+              <label>Date Of Birth</label>
+              <div class="grouping">
+                <input type="text" pattern="[0-9]*" name="day" value="" min="0" max="31" placeholder="DD">
+                <input type="text" pattern="[0-9]*" name="month" value="" min="0" max="12" placeholder="MM">
+                <input type="text" pattern="[0-9]*" name="year" value="" min="0" max="2050" placeholder="YYYY">
+              </div>
+            </div>
+            <!-- set max height in ft and in  -->
+            <div class="height">
+              <label>Height</label>
+              <div class="grouping">
+                <input type="text" pattern="[0-9]*" name="Ft" value="" min="0" max="31" placeholder="Ft">
+                <input type="text" pattern="[0-9]*" name="In" value="" min="0" max="12" placeholder="In">
+              </div>
+            </div>
+            <div>
+              <label>Marital Status</label>
+              <select name="maritalStatus" id="maritalStatus">
+              <option value="">Please select</option>
+              <option value="Never Married">Never Married</option>
+              <option value="Divorced">Divorced</option>
+              <option value="Awaiting Divorce">Awaiting Divorce</option>
+              <option value="Widow">Widow</option>
+              </select>
+            </div>
+            <div>
+              <label>Religion</label>
+              <select name="religion" id="religion">
+              <option value="">Please select</option>
+              <option value="Buddhism">Buddhism</option>
+              <option value="Islam">Islam</option>
+              <option value="Hinduism">Hinduism</option>
+              <option value="Christianity">Christianity</option>
+              </select>
+            </div>
+            <div>
+              <label>Caste</label>
+              <input type="text" placeholder="Caste" name="caste">
+            </div>
+            <div>
+              <label>Education</label>
+              <select name="education" id="education">
+              <option value="">Please select</option>
+              <option value="Did Not Attend School">Did Not Attend School</option>
+              <option value="Primary School">Primary School</option>
+              <option value="Secondary School">Secondary School</option>
+              <option value="High School">High School</option>
+              <option value="College Degree">College Degree</option>
+              <option value="Masters Degree">Masters Degree</option>
+              <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label>Employment</label>
+              <select name="employment" id="employment">
+              <option value="">Please select</option>
+              <option value="Private Sector">Private Sector</option>
+              <option value="Govt. / Public Sector">Govt. / Public Sector</option>
+              <option value="Civil Services">Civil Services</option>
+              <option value="Defence">Defence</option>
+              <option value="Business / Self Employed">Business / Self Employed</option>
+              <option value="Not Working">Not Working</option>
+              <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label>Annual Income</label>
+              <select name="income" id="income">
+              <option value="">Please select</option>
+              <option value="No income">No income</option>
+              <option value="0 - 5 Lakhs">0 - 5 Lakhs</option>
+              <option value="5 - 10 Lakhs">5 - 10 Lakhs</option>
+              <option value="10 - 20 Lakhs">10 - 20 Lakhs</option>
+              <option value="20 - 50 Lakhs">20 - 50 Lakhs</option>
+              <option value="50 Lakhs & Above">50 Lakhs & Above</option>
+              </select>
+            </div>
+            <!-- end of page 1 -->
+          </div>
+          <div class="form-two form-step">
+            <div class="bg svg"></div>
+            <h2>Contact</h2>
+            <!-- <div>
+              <label>Address</label>
+              <input type="text" placeholder="Street Address">
+            </div>
+            <div>
+              <input type="text" placeholder="App, Suite, Building">
+            </div>  -->
+            <div>
+              <label>Father's Name</label>
+              <input type="text" name="fatherName">
+            </div>
+            <div>
+              <label>Father's Occupation</label>
+              <input type="text" name="fatherOccupation">
+            </div>
+            <div>
+              <label>Mother's Name</label>
+              <input type="text" name="motherName">
+            </div>
+            <div>
+              <label>Mother's Occupation</label>
+              <input type="text" name="motherOccupation">
+            </div>
+            <div>
+              <label>Number of Sibling Brothers</label>
+              <select name="brotherSiblings" id="brotherSiblings">
+              <option value="">Please select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              </select>
+            </div>
+            <div>
+              <label>Number of Sibling Sisters</label>
+              <select name="sisterSiblings" id="sisterSiblings">
+              <option value="">Please select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              </select>
+            </div>
+            <div>
+              <label>City</label>
+              <input type="text" placeholder="City" name="city">
+            </div>
+            <div>
+              <label>Province/State</label>
+              <select name="state" id="state">
+              <option value="">Please select</option>
+              <option value="Northern">Northern</option>
+              <option value="North Western">North Western</option>
+              <option value="Western">Western</option>
+              <option value="North Central">North Central</option>
+              <option value="Central">Central</option>
+              <option value="Sabaragamuwa">Sabaragamuwa</option>
+              <option value="Eastern">Eastern</option>
+              <option value="Uva">Uva</option>
+              <option value="Southern">Southern</option>
+              </select>
+            </div>
+            <!-- <div>
+              <label>Zip Code</label>
+              <input type="text" placeholder="Postal/Zip Code">
+            </div> -->
+            <div>
+              <label>Country</label>
+              <select name="country" id="country">
+              <option value="">Please select</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Overseas">Overseas</option>
+              </select>
+            </div>
+          </div>
+            <div class="form-three form-step">
+            <div class="bg-svg"></div>
+            <h2>Security</h2>
+            <div>
+              <label>Username</label>
+              <input type="text" placeholder="Username" name="username">
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" placeholder="Password" name="password">
+            </div>
+            <div>
+              <label>Confirm Password</label>
+              <input type="password" placeholder="Confirm Password" name="confirmPassword">
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" >
+              <label>Recieve our newsletter and special promotions</label>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn-prev" disabled>Back</button>
+          <button type="button" class="btn-next">Next Step</button>
+          <button type="button" class="btn-submit">Submit</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
